@@ -1,0 +1,29 @@
+.container{
+  max-width:150rem;
+  margin: 8rem auto;
+  background-color: #faf7f7;
+  box-shadow: 0 2rem 6rem rgba(0,0,0,.3) ;
+
+  min-height: 100rem;
+}
+
+.header{
+
+
+}
+
+
+.content{
+  display: flex;
+
+}
+
+.sidebar{
+
+}
+
+.main{
+  background-color: #c9c9be;
+  height:100rem;
+  flex:1;
+}
