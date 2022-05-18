@@ -14,11 +14,11 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path='/' >
-          <Redirect to='/home'/>
-        </Route>
+        {/*<Route path='/' >*/}
+        {/*  <Redirect to='/home'/>*/}
+        {/*</Route>*/}
         <Route path='/home' exact>
-          <Home/>
+          <Home />
         </Route>
         <Route path='/contact-us'>
           <ContactUs />
@@ -29,6 +29,7 @@ function App() {
         <Route path='/baked-goods' exact>
           <BakedGoods/>
         </Route>
+
 
         <Route path='*'>
           <NotFound/>

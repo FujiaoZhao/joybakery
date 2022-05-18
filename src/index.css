@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color:#999;
-  background-image: linear-gradient(to right bottom, rgba(248,250,245,0.6), rgba(230,237,220,0.7)), url('image/background.JPG');
+  background-image: linear-gradient(to right bottom, rgba(248,250,245,0.6), rgba(230,237,220,0.7));
   background-size: contain;
   background-repeat: no-repeat;
 

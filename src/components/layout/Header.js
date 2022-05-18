@@ -9,9 +9,12 @@ import {Link} from "react-router-dom";
 const Header = () => {
   return (
     <div className={classes.header}>
+
       <Link to='/home' className={classes.logo}>
         <SvgLogo className={classes.logo_icon}/>
+        <span className={classes.logo_name}>Joy Bakery</span>
       </Link>
+
 
       <form className={classes.search}>
         <input type='text' placeholder='Search Cakes'/>
