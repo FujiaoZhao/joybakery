@@ -1,7 +1,7 @@
 import Layout from "./components/layout/Layout";
 import {Route, Switch, Redirect} from "react-router-dom";
 
-
+import Cafe from './pages/Cafe';
 import Cakes from './pages/Cakes';
 import BakedGoods from './pages/BakedGoods';
 import Home from './pages/Home';
@@ -28,6 +28,9 @@ function App() {
         </Route>
         <Route path='/baked-goods' exact>
           <BakedGoods/>
+        </Route>
+        <Route path='/cafe' exact>
+          <Cafe />
         </Route>
 
 

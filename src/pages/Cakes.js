@@ -1,5 +1,8 @@
+import CakeItem from "../components/cakes/CakeItem";
 const Cakes=()=>{
-  return
+  return(
+    <CakeItem/>
+  )
 }
 
 export default Cakes;
