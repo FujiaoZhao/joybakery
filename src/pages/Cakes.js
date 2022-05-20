@@ -1,7 +1,8 @@
-import CakeItem from "../components/cakes/CakeItem";
+import AvailableCakes from "../components/cakes/AvailableCakes";
+
 const Cakes=()=>{
   return(
-    <CakeItem/>
+    <AvailableCakes/>
   )
 }
 

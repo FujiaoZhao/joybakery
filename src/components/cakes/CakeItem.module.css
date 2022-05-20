@@ -1,28 +1,55 @@
-.cake{
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.btn:link,
-.btn:visited{
-  text-transform:uppercase;
+.cake {
+  margin:2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 60%;
+}
+
+.name {
+  padding:1rem;
+  margin-top:2rem;
+  font-size: 2rem;
+}
+
+.description {
+  font-size:1.5rem;
+  padding:1rem 5rem;
+  margin:1rem;
+}
+
+.btn,
+.btn_link,
+.btn:visited {
+
   text-decoration: none;
-  padding:1rem 2rem;
-  display:inline-block;
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
-  position:relative;
-  font-size:1.6rem;
+  position: relative;
+  font-size: 1.6rem;
   background-color: #fff;
-  color:#777777;
+  color: #777777;
 }
 
-.btn:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+.btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
-.btn:active{
-  transform:translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 
 }

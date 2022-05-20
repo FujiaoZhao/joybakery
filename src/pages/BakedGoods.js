@@ -1,5 +1,9 @@
+import AvailableBakedGoods from "../components/cakes/AvailableBakedGoods";
+
 const BakedGoods=()=>{
-  return
+  return(
+    <AvailableBakedGoods/>
+  )
 }
 
 export default BakedGoods;

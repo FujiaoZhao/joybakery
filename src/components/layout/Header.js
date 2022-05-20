@@ -8,9 +8,10 @@ import {ReactComponent as SvgCake} from "../../image/SVG/birthday-cake.svg";
 import {ReactComponent as SvgCupcake} from "../../image/SVG/cupcake.svg";
 import {ReactComponent as SvgCoffee} from "../../image/SVG/coffee.svg";
 import {ReactComponent as SvgPhone} from "../../image/SVG/phone-square.svg";
-
+import {useSelector} from "react-redux";
 
 const Header = () => {
+  const cartQuantity=useSelector(state=>state.cart.totalQuantity)
   return (
     <div className={classes.header}>
       <div className={classes.header_top}>
@@ -26,18 +27,18 @@ const Header = () => {
           </button>
         </form>
         <nav className={classes.nav}>
-          <button className={classes.nav_button}>
+          <Link to='/shopping-cart' className={classes.nav_button}>
             <SvgCart className={classes.nav_icon}/>
             <span>Cart</span>
-            <span className={classes.cart_badge}>3</span>
-          </button>
-          <button className={classes.nav_button}>
+            <span className={classes.cart_badge}>{cartQuantity}</span>
+          </Link>
+          <Link className={classes.nav_button}>
             <SvgUser className={classes.nav_icon}/>
             <span>Log In</span>
-          </button>
-          <button className={classes.nav_button}>
+          </Link>
+          <Link className={classes.nav_button}>
             <span>Log Out</span>
-          </button>
+          </Link>
         </nav>
       </div>
 
@@ -50,7 +51,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li className={classes.side_nav_button}>
-          <NavLink to='/baked-goods' className={classes.side_nav_link}>
+          <NavLink to='/baked_goods' className={classes.side_nav_link}>
             <SvgCupcake className={classes.side_nav_icon}/>
             <span>Baked Goods</span>
           </NavLink>

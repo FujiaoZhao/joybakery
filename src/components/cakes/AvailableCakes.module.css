@@ -1,0 +1,22 @@
+.cakes{
+  margin-top: 8rem;
+  display:flex;
+
+}
+.CakesLoading{
+  font-size:2rem;
+  margin-top:8rem;
+  text-align: center;
+}
+.httpError{
+  font-size:2rem;
+  margin-top:8rem;
+  text-align: center;
+}
+
+@media (max-width:867px) {
+  .cakes{
+    display:flex;
+    flex-direction: column;
+  }
+}
