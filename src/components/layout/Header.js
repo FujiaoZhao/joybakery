@@ -21,7 +21,7 @@ const Header = () => {
         </Link>
 
         <form className={classes.search}>
-          <input type='text' placeholder='Search Cakes'/>
+          <input type='text' placeholder='Search Cakes' className={classes.search_input}/>
           <button className={classes.search_button}>
             <SvgSearch className={classes.search_icon}/>
           </button>
