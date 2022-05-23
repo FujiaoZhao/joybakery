@@ -1,0 +1,63 @@
+.item {
+  padding: 2rem;
+  border-bottom: 1px solid #777777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#999;
+}
+
+.item_name {
+  font-size: 2rem;
+}
+
+.action {
+  display: flex;
+}
+
+.item_price {
+  font-size: 2rem;
+}
+
+.item_detail {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  margin-left: 2rem;
+  display: flex;
+}
+
+
+.form_label {
+  font-size: 2rem;
+}
+
+.form_input{
+  font-size:2rem;
+  width: 4rem;
+  border: 1px solid #777777;
+}
+.form_input:focus {
+  background-color: #d5d2d2;
+}
+
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all .2s;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #777777;
+}
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
